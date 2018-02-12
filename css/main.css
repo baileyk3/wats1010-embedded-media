@@ -4,7 +4,90 @@
  *
  * Site Styles
  *****************************************************************************/
-
- html {
-     color: green;
- }
+/*formatting for the entire body of the page. I wanted some room on the right so there is some padding*/
+body {
+  margin: 0;
+  background-color: salmon;
+  width: auto;
+  padding-right: 100px;
+}
+/*background image for the header*/
+header {
+  min-height: 400px;
+  background-image: url('../img/official_header.jpg');
+  background-repeat: no-repeat;
+  background-position: center, center;
+  background-size: cover;
+  }
+/*making the h1 align to the top. Sans-serif for all headers*/
+h1 {
+  margin-top: 0;
+  margin: auto;
+  font-family: sans-serif
+}
+h2 {
+  font-family: sans-serif;
+}
+h3 {
+  font-family: sans-serif;
+}
+/*formatting the subtitle to stand out better*/
+.subtitle {
+  margin-top: 0;
+  font-style: italic;
+  font-family: sans-serif;
+}
+/*lining up the nav bar horizontally*/
+nav ul li {
+  display: inline;
+  padding: 15px;
+}
+/*making the nav bar stay in the upper right hand corner of the page so it moves with the page*/
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 350px;
+}
+/*social media links move with the page /like the nav/ Will also move left when hovering over*/
+#social {
+  position: fixed;
+  top: 2px;
+  right: 0;
+  width: 75px;
+  transition: 1s width;
+  margin-top: 0;
+  border-left: solid black 2px;
+}
+/*this shows how far out it will go when hovering over it*/
+#social:hover {
+  width: 100px;
+/*no bullet points or padding*/
+}
+#social ul{
+  list-style-type: none;
+  padding: 0;
+/*making the lead stand out*/
+}
+.lead {
+  font-size: large;
+  color: blue;
+  font-weight: 500;
+  border-bottom: solid black;
+}
+/*centering the pictures across the page horizontally*/
+ul.weybec-people {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+/*adjusting the text in the list*/
+ul.weybec-people li {
+  display: inline-block;
+}
+/*changing the size of the pictures*/
+.headshot {
+  width: 300px;
+  height: 300px;
+}
